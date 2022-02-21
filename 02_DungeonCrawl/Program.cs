@@ -87,7 +87,10 @@ namespace myGame
                 } while (newChar.Health > 0);
                 int finalScore = totalMonsterKills * 100;
                 Console.Clear();
-                Console.WriteLine($"Oh no you have fallen in battle. Game Over! You eliminated {totalMonsterKills} monsters! Your final score was {finalScore}.  Press enter to return to the main menu.");
+                Console.WriteLine($"Oh no you have fallen in battle. Game Over! You eliminated {totalMonsterKills} monsters! Your final score was {finalScore}.");
+                Console.WriteLine("------------THE END------------");
+                Console.WriteLine("COPYRIGHT 2022 EILERS ALBACETE LLC.");
+                Console.WriteLine("Press enter to return to the Main Menu.");
                 Console.ReadLine();
             }
         }
