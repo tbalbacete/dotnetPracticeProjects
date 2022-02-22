@@ -35,7 +35,7 @@ namespace myGame
                 Console.ReadLine();
                 Console.Clear();
                 Monster monster = new Monster ();
-                monsterHealth health = new monsterHealth();
+                MonsterHealth health = new MonsterHealth();
                 Damage damage = new Damage();
                 int totalMonsterKills = 0;
                 do 
@@ -159,8 +159,6 @@ namespace myGame
     }
     public class Monster 
     {
-        public int monsterHealth;
-
         Random _random = new Random();
         public string chooseRandomMonster()
         {
@@ -182,7 +180,7 @@ namespace myGame
             return damageDone;
         }
     }
-    public class monsterHealth
+    public class MonsterHealth
     {
         Random health = new Random();
         public int randomHealth()
